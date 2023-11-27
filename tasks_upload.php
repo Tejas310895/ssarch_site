@@ -18,7 +18,7 @@
     <?php foreach (get_task_uploads($_GET['task']) as $uploads) { ?>
         <div class="col-md-2 col-sm-12 col-lg-2">
             <div class="card">
-                <img src="../uploads/<?php echo $uploads['upload_link']; ?>" class="card-img-top img-responsive" height="200px" alt="...">
+                <img src="<?php echo $assets_url.$uploads['upload_link']; ?>" class="card-img-top img-responsive" height="200px" alt="...">
                 <div class="card-body">
                     <p class="card-text"><?php echo $uploads['task_note']; ?></p>
                     <a href="ajax_submits.php?delete_task_uploads=<?php echo $uploads['id']; ?>" class="btn btn-danger float-right">

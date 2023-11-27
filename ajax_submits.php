@@ -3,6 +3,12 @@ session_start();
 date_default_timezone_set('Asia/Kolkata');
 include("includes/db.php");
 
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+    $assets_url = '../uploads/';
+} else {
+    $assets_url = '../images/uploads/';
+}
+
 function common_insert($data, $table)
 {
     $query = "INSERT INTO $table ";
@@ -124,7 +130,7 @@ if (isset($_GET['approve_task'])) {
 }
 
 if (isset($_POST['task_upload'])) {
-    $target_dir = "../uploads/";
+    $target_dir = $assets_url;
     $task_file_name =  "TU_" . random_int(10000000, 99999999) . basename($_FILES["task_file"]["name"]);
     $task_file = $target_dir . $task_file_name;
     $task_note = $_POST['task_note'];

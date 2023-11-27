@@ -6,6 +6,12 @@ if (empty($_SESSION['user'])) {
     include("functions.php");
 }
 
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+    $assets_url = '../uploads/';
+} else {
+    $assets_url = '../images/uploads/';
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

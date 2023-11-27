@@ -69,7 +69,7 @@
                                     <form class="forms-sample">
                                         <div class="modal-content">
                                             <div class="modal-body p-1">
-                                                <img class="img-fluid" src="../uploads/<?php echo $uploads['upload_link']; ?>" alt="">
+                                                <img class="img-fluid" src="<?php echo $assets_url.$uploads['upload_link']; ?>" alt="">
                                             </div>
                                         </div>
                                     </form>
