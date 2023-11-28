@@ -42,7 +42,6 @@
                   <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" name="login" type="submit" value="Sign In">
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-right">
-                  <a href="#" class="auth-link text-black">Forgot password?</a>
                 </div>
               </form>
             </div>
