@@ -31,7 +31,8 @@
                                         <input type="text" class="form-control" id="exampleInputUsername1" name="task_desc" placeholder="Description">
                                     </div>
                                     <div class="form-group mb-1">
-                                        <select class="form-control" id="exampleSelectGender" name="task_to">
+                                        <select class="form-control" name="task_to">
+                                            <option selected disabled> Select Staff</option>
                                             <?php foreach (get_site_workers() as $vals) { ?>
                                                 <option value="<?php echo $vals['user_id']; ?>"><?php echo $vals['user_name']; ?></option>
                                             <?php } ?>
@@ -69,7 +70,7 @@
                                     <form class="forms-sample">
                                         <div class="modal-content">
                                             <div class="modal-body p-1">
-                                                <img class="img-fluid" src="<?php echo $assets_url.$uploads['upload_link']; ?>" alt="">
+                                                <img class="img-fluid" src="<?php echo $assets_url . $uploads['upload_link']; ?>" alt="">
                                             </div>
                                         </div>
                                     </form>

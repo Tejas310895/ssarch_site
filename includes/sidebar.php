@@ -25,7 +25,7 @@
                             <li class="nav-item"> <a class="nav-link" href="?measurements_report"> Measurements </a></li>
                         </ul>
                     </div>
-                </li>
+            </li>
             <?php } ?>
         </ul>
     </nav>

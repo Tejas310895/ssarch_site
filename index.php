@@ -70,10 +70,6 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
                             <img src="template/images/faces/user.png" alt="profile" />
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                            <a class="dropdown-item">
-                                <i class="ti-settings text-primary"></i>
-                                Profile
-                            </a>
                             <a class="dropdown-item" href="logout">
                                 <i class="ti-power-off text-primary"></i>
                                 Logout

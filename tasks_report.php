@@ -14,13 +14,13 @@
                 <div class="card">
                     <div class="card-header p-1" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne-<?php echo $proj['project_no']; ?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?php echo $proj['project_no']; ?>
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne-<?php echo $proj['project_no']; ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body bg-inverse-info p-1">
                             <?php foreach (get_tasks($proj['project_no']) as $task) { ?>
                                 <h4 class="card-title mt-2 ml-2 text-uppercase"><u><?php echo $task['task_title']; ?></u></h4>
@@ -34,7 +34,7 @@
                                             <form class="forms-sample">
                                                 <div class="modal-content">
                                                     <div class="modal-body p-1">
-                                                        <img class="img-fluid" src="<?php echo $assets_url.$uploads['upload_link']; ?>" alt="">
+                                                        <img class="img-fluid" src="<?php echo $assets_url . $uploads['upload_link']; ?>" alt="">
                                                     </div>
                                                 </div>
                                             </form>

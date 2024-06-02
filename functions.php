@@ -34,7 +34,7 @@ function get_task_uploads($task_id)
 
 function get_site_workers()
 {
-    $query = "SELECT * FROM users WHERE user_role='site_worker'";
+    $query = "SELECT * FROM users WHERE user_role='site_staff'";
     return common_get($query);
 }
 
